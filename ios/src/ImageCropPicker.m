@@ -446,7 +446,7 @@ RCT_EXPORT_METHOD(openCropper:(NSDictionary *)options
 
                  completion([self createAttachmentResponse:[outputURL absoluteString]
                                                   withExif:nil
-                                             withSourceURL:[sourceURL absoluteString]
+                                             withSourceURL:filePath
                                        withLocalIdentifier: forAsset.localIdentifier
                                               withFilename:[forAsset valueForKey:@"filename"]
                                                  withWidth:[NSNumber numberWithFloat:track.naturalSize.width]
